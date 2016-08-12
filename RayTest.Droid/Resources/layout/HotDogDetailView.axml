@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainScrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#FCD972"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        <ImageView
+            android:src="@android:drawable/ic_menu_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/hotDogImageView"
+            android:layout_gravity="center_horizontal" />
+        <TextView
+            android:text="Hot dog name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hotDogTextView"
+            android:paddingTop="20dp"
+            android:textSize="20dp"
+            android:textColor="@android:color/holo_blue_bright" />
+        <TextView
+            android:text="Short description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hotDogLabelDescriptionView"
+            android:editable="False"
+            android:paddingTop="20dp"
+            android:textSize="12dp"
+            android:textColor="@android:color/holo_blue_bright" />
+        <TextView
+            android:text="aksdkasjdkajskdjaksjdkajsdkajskdjaksjdaksjdkajskdja"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hotDogDescriptionView"
+            android:editable="False"
+            android:paddingTop="20dp"
+            android:textSize="12dp"
+            android:textColor="@android:color/holo_blue_bright" />
+        <TextView
+            android:text="Price: 1111"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hotDogPriceTextView"
+            android:paddingTop="20dp"
+            android:textSize="16dp"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textStyle="bold" />
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:text="Cancel"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/cancelButton"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp" />
+            <EditText
+                android:text="1"
+                android:inputType="number"
+                android:layout_height="40dp"
+                android:layout_width="30dp"
+                android:id="@+id/amountEditText"
+                android:background="@android:color/white"
+                android:textColor="@android:color/black"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+            <Button
+                android:text="Order Now!"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/orderButton"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
